@@ -6,8 +6,8 @@ block content
   a(href="/form", target="new") New Entry
   list = ['a','b','c']
   ul
-   for item, index in list
+   for item, index in items
     if(index % 2) == 0
-     li.even= item
+     li.even= item.text
     else
-     li.odd= item
+     li.odd= item.text

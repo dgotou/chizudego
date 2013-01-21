@@ -2,16 +2,18 @@
 /*
  * GET home page.
  */
-
+/*
 var items = [
     { "text": "1st Post." }
     , { "text": "2nd Post." }
-];
+];*/
 var model = require('../model');
 var Post = model.Post;
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express', items:items });
+    Post.find({}, function(err, items){
+        res.render('index', { title: 'Entry List', items: items })
+    });
 };
 
 exports.form = function(req, res){
