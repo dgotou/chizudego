@@ -1,16 +1,12 @@
 {
-  "name": "application-name",
+  "name": "chizudego",
   "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node app"
   },
   "dependencies": {
-<<<<<<< HEAD
     "express": "3.0.6",
-=======
-    "express": "3.0.5",
->>>>>>> a06d9ff6e29c264654745ebfa7157564ae232e4c
     "jade": "*"
   }
 }

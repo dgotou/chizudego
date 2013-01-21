@@ -3,22 +3,19 @@
  * GET home page.
  */
 
-<<<<<<< HEAD
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
-};
-=======
+var items = [
+    { "text": "1st Post." }
+    , { "text": "2nd Post." }
+];
 var model = require('../model');
 var Post = model.Post;
 
 exports.index = function(req, res){
-    Post.find({}, function(err, items){
-        res.render('index', { title: 'Entry List', items: items })
-    });
+  res.render('index', { title: 'Express', items:items });
 };
 
 exports.form = function(req, res){
-    res.render('form', { title: 'New Entry' })
+    res.render('form', { title: 'Form Entry' })
 };
 
 exports.create = function(req, res){
@@ -32,4 +29,3 @@ exports.create = function(req, res){
         }
     });
 };
->>>>>>> a06d9ff6e29c264654745ebfa7157564ae232e4c

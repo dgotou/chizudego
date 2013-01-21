@@ -29,11 +29,10 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.get('/form', routes.form);
+app.post('/create', routes.create);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
-<<<<<<< HEAD
 
-=======
->>>>>>> a06d9ff6e29c264654745ebfa7157564ae232e4c
