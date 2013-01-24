@@ -2,4 +2,16 @@ extends layout
 
 block content
   h1= title
+<<<<<<< HEAD
   p Welcome to #{title}
+=======
+  p Welcome to #{title}
+  a(href="/form", target="new") New Entry
+  list = ['a','b','c']
+  ul
+   for item, index in items
+    if(index % 2) == 0
+     li.even= item.text
+    else
+     li.odd= item.text
+>>>>>>> ca455b6a5364b1b14759a8ef40b3a081e230b01d
