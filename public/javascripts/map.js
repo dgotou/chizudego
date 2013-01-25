@@ -9,3 +9,13 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+var io = require("socket.io").listen(app);
+/*
+socket.on('message', function(data) {
+    console.log("data:");
+    console.log(data);
+});
+
+socket.emit('');
+*/
